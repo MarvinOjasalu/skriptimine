@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# muljed ja saavutused
+#
+echo "Marvin Ojasalu" # väljasta ja tee reavahetus
+echo "ISP117" # väljasta ja tee reavahetus
+echo "mulle tundub, et see aine on põnev" # väljasta ja tee reavahetus
+echo "Hetkel tundub, et siin tunnis ma õpin palju asju juurde" # väljasta ja tee reavahetus
+#
+# skripti lõpp
