@@ -1,0 +1,15 @@
+#skripti algus
+#
+uname
+uname -v
+uname -r
+uname -m
+uname -a
+lshv
+lscpu
+lsscsi -s
+fdisk -l
+dmidecode -t bios
+dmidecode -t 17
+free -m 
+vmstat
