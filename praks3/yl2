@@ -1,0 +1,7 @@
+# skripti algus
+#
+# Var kataloogis otsimine
+#
+find /var -name *.log | sort -rn
+#
+# skripti lõpp
