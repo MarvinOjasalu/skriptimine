@@ -2,6 +2,6 @@
 #
 # Var kataloogis otsimine
 #
-find /var -name *.log | sort -rn
+find /var -name *.log 2>>/dev/null -exec wc -l {} \;
 #
 # skripti lõpp
