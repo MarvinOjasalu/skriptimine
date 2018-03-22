@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo -n "Sisesta aluskandiku pikkus(cm):"
+read k_pikkus
+echo -n "Sisesta aluskandiku laius(cm):"
+read k_laius
+echo -n "Kui suuri küpsiseid kasutatakse pikkus(cm)?: "
+read ky_pikkus
+echo -n "Küpsise laius(cm):"
+read ky_laius
+echo -n "Mitu kihti teete?: "
+read kiht
+echo -n "Mitu küpsist on pakis?: "
+read pakis
+echo "Poest tuleb osta" `expr  $k_pikkus \* $k_laius  / $ky_pikkus \* $ky_laius \* $kiht / $pakis` "pakki"
+#
+# skripti lõpp
