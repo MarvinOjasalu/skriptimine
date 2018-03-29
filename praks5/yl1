@@ -1,21 +1,21 @@
 #!/bin/bash
 #
-# Kolmnurga pindala arvutamine
+# Skripti algus
 #
-# Skript algab
-#
-echo
-echo -n "Sisesta a kylje vaartus: "
+echo -n "Kui pikk on a külg? :"
 read a
-echo -n "Sisesta b kylje vaartus: "
+echo -n "Kui pikk on külg b? :"
 read b
-echo -n "Sisesta c kylje vaartus: "
-read c
+a_ruut=`echo "scale=2;($a^2)" | bc`
+b_ruut=`echo "scale=2;($b^2)" | bc`
+c_ruut=`echo "scale=2;($a_ruut+$b_ruut)" | bc`
+loppvastus=`echo "scale=2;sqrt($c_ruut)" | bc`
+echo "Tehted tehtud, kolmnurga hüpotenuus on $loppvastus ."
+echo -n "Tehted, mis sooritasin:"
+echo "Esimese külje ruut: $a_ruut"
+echo "Teise külje ruut: $b_ruut"
+echo "a ja b külje ruut kokku: $c_ruut"
+echo "Ruutude summa ruutjuur: $loppvastus"
 #
-# pindala  Arvutamine
-#
-p=`echo "scale=2;($a+$b+$c)/2" | bc`
-s=`echo "scale=2;sqrt($p*($p-$a)*($p-$b)*($p-$c))" | bc`
-echo "Pindala = $s"
-#
-#skripti lõpp
+# skripti lõpp
+
