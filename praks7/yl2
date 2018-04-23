@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# skripti algus
+#
+# kuud ja aastaajad
+#
+echo -n "sisesta kuu number: "
+read kuu
+if test $kuu -gt 0 -a $kuu -lt 3
+then 
+echo "on talv"
+elif test $kuu -ge 3 -a $kuu -lt 6
+then
+echo "on kevad"
+elif test $kuu -ge 6 -a $kuu -lt 9
+then
+echo "on suvi"
+elif test $kuu -ge 9 -a $kuu -lt 12
+then 
+echo "on sügis"
+elif test $kuu -ge 12
+then
+echo "on talv"
+else
+echo "vigane sisend"
+fi
+#
+# skripti lõpp
