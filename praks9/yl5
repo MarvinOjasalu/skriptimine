@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# kujundi trükimine
+#
+echo -n "Sisesta ridade arv : "
+read rida
+for((r=$rida; r>1; r--))
+do
+ for((v=2; v<=$r; v++))
+ do
+  echo -n "* "
+ done
+ echo
+done
