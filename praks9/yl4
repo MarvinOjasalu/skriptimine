@@ -1,0 +1,11 @@
+#!/bin/bash
+echo -n "Sisesta ridade arv: "
+read rida
+str="*"
+
+for (( i=0; i<$rida; i++ ))
+do
+   echo "$str"
+   str="$str *"
+done
+
